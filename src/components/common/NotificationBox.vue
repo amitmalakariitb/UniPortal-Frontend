@@ -90,6 +90,7 @@ export default {
  
         // this.colourStore.colourQuestionView()
         this.$emit('openNwindow');
+        this.SetQuestionView();
         this.colourStore.colourQuestionView()
         
     }
