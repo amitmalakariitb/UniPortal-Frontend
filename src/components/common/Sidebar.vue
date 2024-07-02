@@ -302,6 +302,9 @@ export default {
       this.$emit('displaynotif', notif);
       console.log(notif);
       console.log('works');
+      // this.showSidebar = false;
+      // this.showNotifications = false;
+      this.Burger()
     },
     // async SetQuestionView() {
     //   await this.QuestionStore.SetQuestion(this.question);
