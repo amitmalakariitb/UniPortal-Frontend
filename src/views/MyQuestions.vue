@@ -130,10 +130,10 @@ export default {
     },
   },
   async mounted() {
+    await this.colourStore.colourMyQuestions();
     await this.fetchQuestions();
     this.questions = this.listStore.list;
     console.log(this.questions);
-    await this.colourStore.colourMyQuestions();
   },
 };
 </script>

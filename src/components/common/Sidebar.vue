@@ -103,7 +103,7 @@
     </div>
 
   </div>
-  <div class="notifications-content" v-if="(showNotifications && windowWidth > 750)">
+  <div class="notifications-content" v-if="(showNotifications && windowWidth > 750) || (showSidebar && showNotifications && windowWidth < 750)">
     <div class="back-notify"><arrow class="arrow" @click="notify"/>  Notifications</div>
     <div class="notifs"  >
       <div class="notif" 
